@@ -72,7 +72,7 @@ Citizen.CreateThread(function()
 			local dist = Vdist(plyCoords.x, plyCoords.y, plyCoords.z, arms[k].x, arms[k].y, arms[k].z)
 			if dist <= 0.5 then
 				hintToDisplay('Druk op ~INPUT_CONTEXT~ om je ~g~armen te trainen')
-				if IsControlJustPressed(0, Util.GetKeyNumber('E') then
+				if IsControlJustPressed(0, Util.GetKeyNumber)('E') then
 					if training == false then
 						TriggerEvent('fsn_notify:displayNotification', 'Voorbereiding van de oefening', 'centerRight', 4000, 'success')
 						Citizen.Wait(1000)					
